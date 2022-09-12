@@ -116,8 +116,11 @@ ul {
 /* studia */
 /* page-solution styles */
 .page-solution {
+    max-width: 1600px;
+    margin: auto;
     padding: 200px 0;
 
+    background-color: rgb(47, 48, 58);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero-background.jpg');
     background-repeat: no-repeat;
     background-size: 1600px;
@@ -168,10 +171,14 @@ ul {
     margin-left: 30px;
 }
 .feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
     background-color: var(--lite-background);
     border-radius: 4px;
-    padding: 25px 0;
+    height: 120px;
     margin-bottom: 30px;
 }
 .feature-subtitle {
@@ -271,8 +278,12 @@ ul {
     padding: 0;
 }
 .icon-list a {
-    display: block;
-    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
     border-radius: 50%;
     color: #AFB1B8;
 }
@@ -300,8 +311,12 @@ ul {
     padding: 0;
 }
 .client-link {
-    display: block;
-    padding: 16px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     color: #AFB1B8;
@@ -369,8 +384,11 @@ ul {
     width: calc((100% - 60px) / 3);
     margin-bottom: 30px;
 }
-.work-item:hover,
-.work-item:focus {
+.work-item-link {
+    display: block;
+}
+.work-item-link:hover, 
+.work-item-link:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .work-item + .work-item {
@@ -419,7 +437,9 @@ ul {
 }
 .page-footer .container {
     display: flex;
-    column-gap: 80px;
+    align-items: baseline;
+
+    column-gap: 70px;
 }
 .footer-logo {
     display: inline-block;
@@ -465,7 +485,7 @@ ul {
     color: var(--accent-color);
 }
 
-.footer-social b {
+.footer-social-title {
     display: block;
     font-size: 14px;
     line-height: 1.14;
@@ -474,7 +494,6 @@ ul {
     color: var(--white-color);
 
     margin-bottom: 20px;
-    margin-top: 12px;
 }
 .social-list {
     display: flex;
@@ -484,8 +503,12 @@ ul {
     padding: 0;
 }
 .social-link {
-    display: block;
-    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 44px;
+    height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     color: var(--white-color);
